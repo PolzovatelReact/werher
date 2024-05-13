@@ -24,7 +24,7 @@ const Wether = ({ weatherData }) => {
           <p>Humidity</p>
           <p>{weatherData.main.humidity.toFixed()} %</p>
           <p>Wind Speed</p>
-          <p>{weatherData.wind.speed.toFixed()} KPH</p>
+          <p>{weatherData.wind.speed.toFixed()} kph</p>
 
           <p>Pressure</p>
           <p>{weatherData.main.pressure} hPa</p>
