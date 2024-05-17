@@ -1,41 +1,22 @@
 import "./App.css";
-import { useStrate } from "react";
+
 import CComponent from "./CComponents";
 import TestOne from "./TestOne";
-import MapContainer from "./MapGoogle";
 import MyWether from "./MyWether";
 
-//const api = {
-// key: "",
-// base: "",
-//};
-
 function App() {
-  // const [search, setSearch] = useStrate("");
-  //const [weather, setWeather] = useStrate;
-
-  //const searchPressed = () => {
-  // fetch(`${api.base} ${search} ${api.key}`);
-  //};
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Wether app </h1>
-        <div>
-          <input
-          //  type="text"
-          // placeholder="Enter city/town..."
-          //  onChange={(e) => setSearch(e.target.value)}
-          />
-          <button> Search</button>
-        </div>
-        <p> </p>
-        <p>32 F</p>
-        <p>Sunny</p>
+        <p style={{ width: "700px" }}>
+          Чтобы узнать текущую погоду, пожалуйста, введите название города в
+          поле ввода ниже.
+        </p>
+        <MyWether />
+
+        <h2>Каталог напитков</h2>
         <CComponent />
         <TestOne />
-        <MapContainer />
-        <MyWether />
       </header>
     </div>
   );
